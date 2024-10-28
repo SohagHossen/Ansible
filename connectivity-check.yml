@@ -1,0 +1,11 @@
+---
+- name: Install and start the services
+  hosts: all
+
+- name: first basic paybook
+  hosts: localhost
+
+  tasks:
+  - name: test connectivity
+    ping:
+
