@@ -1,0 +1,12 @@
+---
+- name: Copy file local to remote server
+  hosts: all
+  tasks:
+  - name: copy text file to remote
+    copy:
+    src: /root/myfile.txt
+    dest: /tmp
+    owner: sohag
+    group: sohag
+    mode: u=wrx,u=wr,o=r
+   backup: true
