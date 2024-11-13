@@ -1,0 +1,17 @@
+---
+- name: File Module
+  hosts: all
+
+  tasks:
+  - name: file create
+    file:
+      path: /tmp/myfile.txt
+      stats: touch
+      owner: sohag
+      group: sohag
+      mode: u=wr,g=wr,o=r
+
+  - name: Creating directory
+    file:
+      path: /tmp/myfolder
+      stats: directory
