@@ -1,0 +1,11 @@
+—
+#Script run to remote server
+-name: Run to remote server
+ hosts: all
+
+ tasks:
+  - name: run script to remote server
+    shell: ./test.sh  >> test.log
+    args: 
+     chdir: /tmp/script
+     creates: test.log
