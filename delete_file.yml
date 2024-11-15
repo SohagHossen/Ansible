@@ -1,0 +1,12 @@
+---
+#
+- name: Delete File using file Module
+  hosts: all
+
+  tasks:
+  - name: file delete
+    file:
+      path: /tmp/myfile.txt
+      stats: absent
+      owner: sohag
+      group: sohag
