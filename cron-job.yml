@@ -1,0 +1,16 @@
+—
+-name: Run cron job to remote server
+ hosts: all
+
+ tasks:
+  - name: run cron job 
+    cron:
+     name: test script run
+#(specific day you can use * for every day)
+    minute: 30
+    hour: 23 
+    day: 2 
+    month: "*"
+   weekday: "*"
+   user: sohag
+   job: /tmp/test.sh
