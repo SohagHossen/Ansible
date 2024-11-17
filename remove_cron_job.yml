@@ -1,0 +1,10 @@
+—
+-name: Remove cron job to remote server
+ hosts: all
+
+ tasks:
+  - name: removecron job 
+    cron:
+     name: test script run (must use same name )
+     state: absent
+     user: sohag
