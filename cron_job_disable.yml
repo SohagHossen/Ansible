@@ -1,0 +1,9 @@
+—
+-name: Remove cron job to remote server
+ hosts: all
+ 
+tasks:
+- name: cronjob run
+  cron:
+    name:  test script run
+    disable: true
