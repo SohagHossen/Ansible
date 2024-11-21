@@ -1,0 +1,13 @@
+—
+-name: Remove cron job to remote server
+ hosts: all
+
+ tasks:
+ - name:
+   user:
+    name: sohag
+    commnet: add new user for devops
+    shell: /bin/bash
+    groups: devops,testing #( you can use group for single group)
+    state: absent #(if you need to delete user )
+    remove: yes #(delete home directory) 
