@@ -4,3 +4,5 @@ List:
 2. nginx-install.yml
 3. copy-remote-server.yaml
 4. delete_file.yml
+5. directory_create.yml
+6. user-managment.yml
