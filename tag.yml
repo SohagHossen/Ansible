@@ -1,0 +1,19 @@
+—
+- name: file managment
+  hosts: all
+
+  tasks:
+  - name: file create
+    file:
+      path: /tmp/myfile.txt
+      stats: touch
+      owner: sohag
+      group: sohag
+      mode: u=wr,g=wr,o=r
+    tags: f-create 
+
+  - name: Creating directory
+    file:
+      path: /tmp/myfolder
+      stats: directory
+    tags: d-create 
