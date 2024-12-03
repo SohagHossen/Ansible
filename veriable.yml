@@ -1,0 +1,16 @@
+---
+- name: Install and start the services
+  hosts: all
+  vars: 
+     - napp: nginx
+
+  tasks:
+   - name: Installing Nginx web server
+     yum:
+      name: "{{  napp }}"
+      state: present
+   - name:
+     service:
+       name: "{{  napp }}"
+       state: started
+       enabled: true  
