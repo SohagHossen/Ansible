@@ -3,7 +3,7 @@ List:
 1. connectivity-check.yml
   * We are checking our remote server connectivity using this script.
 2. nginx-install.yml
-   *If need to install nginx webserver in your remote server then you can use this script.
+   * If need to install nginx webserver in your remote server then you can use this script.
 3. copy-remote-server.yaml
 4. delete_file.yml
 5. directory_create.yml
