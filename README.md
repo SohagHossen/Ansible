@@ -12,3 +12,5 @@ List:
 8. cron_job_disable.yml
 9. copy-remote-server.yaml
 10. remove_cron_job.yml
+11. Process_kill.yml
+
